@@ -1,13 +1,18 @@
 :local metaInfo {
+    # package name: the name when invoked by `GetFunc`
     "name"="rspm.hello-world";
+    "author"="rspm";
+    # version number: will be compared when upgrading
     "version"="1.0.0";
     "description"="rspm package example: hello-world";
-    "url"="";
+    # the file url: will be used when upgrading
+    "url"="https://raw.githubusercontent.com/Detavern/rspm-pkg-hello-world/master/hello-world.rsc";
 };
 
 
 # $helloWorld
 # [[$GetFunc "rspm.hello-world.helloWorld"] Name="Alice"];
+# In order to avoid using of built-in keywords, UpperCamelCase is strongly recommended for the style of keyword arguments.
 # kwargs: Name=<str>    substitution of string "world"
 :local helloWorld do={
     :global IsNothing;

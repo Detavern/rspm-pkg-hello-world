@@ -6,7 +6,7 @@
 - open a RouterOS terminal and install package by command
 
 ```
-[[$GetFunc "rspm.install"] URL=""];
+[[$GetFunc "rspm.install"] URL="https://raw.githubusercontent.com/Detavern/rspm-pkg-hello-world/master/hello-world.rsc"];
 ```
 
 ## invoke functions in installed package
