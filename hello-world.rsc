@@ -1,11 +1,13 @@
+# name: the name when invoked by `GetFunc`
+# version: will be compared when upgrading
+# url: will be used when upgrading
+# proxyUrl: if exist, this url will be used instead of `url` when upgrading
+
 :local metaInfo {
-    # package name: the name when invoked by `GetFunc`
     "name"="rspm.hello-world";
     "author"="rspm";
-    # version number: will be compared when upgrading
     "version"="1.0.0";
     "description"="rspm package example: hello-world";
-    # the file url: will be used when upgrading
     "url"="https://raw.githubusercontent.com/Detavern/rspm-pkg-hello-world/master/hello-world.rsc";
 };
 
